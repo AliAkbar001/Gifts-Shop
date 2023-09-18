@@ -1,0 +1,112 @@
+*{
+    font-family: 'Poiret One', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff77d;
+    border-radius: 3rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff77d;
+  }
+
+body{
+    /* background-image: url('/imgs/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat; */
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #fff77d;
+}
+
+.links>a:hover{
+  color: white;
+}
+
+.inputemail:focus{
+    outline:none;
+}
+
+.inputemail{ 
+    color:white;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.products {
+	position: relative;
+}
+.edit {
+	margin-top: 6.5rem;
+  margin-left: 4rem;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+.products:hover .post-image{
+  opacity: 0.7;
+}
+.products:hover .hover-icon{
+  opacity: 1;
+}
+.hover-icon{
+  width: 30px;
+}
+.products:hover .edit {
+	display: flex;
+}
+
+.login{
+  background-image: url('/imgs/loginBg2.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+.signup{
+  background-image: url('/imgs/signup.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+.welcome, .shop, .cart, .productpage{
+  background-image: url('/imgs/3.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+.whatsapp{
+  width:50px;
+  cursor: pointer;
+  position:fixed; 
+  bottom:1.5rem; 
+  right:1.5rem;
+  transition: 0.3s;
+}
+
+.whatsapp:hover{
+  width: 60px;
+}
+
