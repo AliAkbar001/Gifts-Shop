@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Cart | Flowers Shop</title>
 </head>
-<body class="text-white cart">
-    <div class="container-fluid py-3 px-5">
-    <div class="d-flex justify-content-between align-items-center">
+<body class="text-black cart">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -22,6 +22,7 @@
                 <a href="/custom/{{$email}}" class="mx-3">Custom Gifts</a>
                 <a href="/cart/{{$email}}" class="mx-3">Cart</a>
                 <a href="/logout/{{$email}}" class="mx-3">Logout</a>
+                <!-- <a href="/login" class="mx-3">Login</a> -->
             </div>
         </div>
         <div class="row my-5">
@@ -76,7 +77,7 @@
                         <p class="fw-bold" style="margin-block-start: 0; margin-block-end:0;">{{$total +5}} $</p>
                     </div>
                 </div>
-                <a href="/checkout/{{$email}}/{{$total+20}}"><button type="submit" class="btn fw-bold w-100" style="background: #fff77d; color:#1a134d">Checkout</button></a>    
+                <a href="/checkout/{{$email}}/{{$total+20}}"><button type="submit" class="btn fw-bold w-100" style="background: #E32C92; color:white">Checkout</button></a>    
 <!-- 
                 @if (count($orders)!=0)
                     <a href="/checkout/{{$email}}/{{$total+20}}"><button type="submit" class="btn fw-bold w-100" style="background: #fff77d; color:#1a134d">Checkout</button></a>    

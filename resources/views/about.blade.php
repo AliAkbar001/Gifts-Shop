@@ -30,18 +30,21 @@
         </div>
         <div class="about-cover">ABOUT US</div>
             <div class="welcome-product-card mt-5 mb-2 p-4 d-flex justify-content-center flex-column align-items-center">
-            <h1 style="color:#E32C92">Information</h1>
-            <p class="my-5" style="line-height:2; text-align:justify">Welcome to our Gifts Store, your ultimate destination for unique and memorable gifts. At our Gifts Store, we believe that giving and receiving gifts should be a joyous experience that leaves a lasting impression. We are passionate about curating a diverse collection of products that celebrate special moments, express love and appreciation, and bring smiles to faces.
-
-With years of experience in the gifting industry, we understand the importance of finding the perfect gift for every occasion. Our team of dedicated professionals scours the globe to handpick the finest products, ensuring that each item in our collection is of the highest quality and embodies the essence of thoughtful gifting.
-
-We take pride in offering a wide range of products that cater to different tastes, preferences, and budgets. From elegant home decor and personalized accessories to delightful keepsakes and gourmet treats, our selection is carefully curated to inspire and delight. Whether you're searching for a birthday surprise, a heartfelt anniversary gift, or a token of appreciation, you'll find something special at our Gifts Store.
-
-At our Gifts Store, we strive to provide an exceptional shopping experience for our customers. Our user-friendly website is designed to make browsing and purchasing effortless, and our dedicated customer support team is always ready to assist you with any questions or concerns you may have. We prioritize secure and reliable payment options, ensuring that your transactions are safe and smooth.
-
-We believe in the power of gift-giving to create cherished memories and strengthen relationships. That's why we go above and beyond to ensure that each item is carefully packaged and delivered with love and care. We take pride in our prompt and reliable shipping services, ensuring that your gifts arrive on time, ready to create moments of joy and celebration.
-
-Thank you for choosing our Store as your go-to destination for gifts that make a difference. We are honored to be a part of your special moments and look forward to helping you find the perfect gift that will bring smiles and warm hearts. Start exploring our collection today and discover the joy of giving with our gifts store.</p>
+            <div class="col col-12 d-flex px-5 my-5">
+                <img src="{{asset('/imgs/office-1.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; z-index:360;" alt="">
+                <div class="d-flex flex-column justify-content-center px-5">
+                <h1 style="color:#E32C92">Our Store</h1>
+                <p class="my-1 mt-5">Welcome to our Gifts Store, your ultimate destination for unique and memorable gifts. At our Gifts Store, we believe that giving and receiving gifts should be a joyous experience that leaves a lasting impression. We are passionate about curating a diverse collection of products that celebrate special moments, express love and appreciation, and bring smiles to faces. With years of experience in the gifting industry, we understand the importance of finding the perfect gift for every occasion. </p>
+                </div>
+            </div>
+            <div class="col col-12 d-flex px-5 my-5">
+                <div class="d-flex flex-column justify-content-center px-5">
+                <h1 style="color:#E32C92;">User Friendly Environment</h1>
+                    <p class="my-1 mt-5">Our user-friendly website is designed to make browsing and purchasing effortless, and our dedicated customer support team is always ready to assist you with any questions or concerns you may have. We prioritize secure and reliable payment options, ensuring that your transactions are safe and smooth. We believe in the power of gift-giving to create cherished memories and strengthen relationships.</p>
+                    <p class="my-1"> That's why we go above and beyond to ensure that each item is carefully packaged and delivered with love and care. We take pride in our prompt and reliable shipping services, ensuring that your gifts arrive on time, ready to create moments of joy and celebration. Thank you for choosing our Store as your go-to destination for gifts that make a difference.</p>
+                </div>
+                <img src="{{asset('/imgs/office-2.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; z-index:360;" alt="">
+            </div>
             </div>
         @component('components.footer')    
         @endcomponent

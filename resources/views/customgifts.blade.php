@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Custom Gift | Gifts Shop</title>
 </head>
-<body class="shop text-white">
-    <div class="container-fluid py-3 px-5">
-    <div class="d-flex justify-content-between align-items-center">
+<body class="shop text-black">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -28,55 +28,46 @@
                 @endif
             </div>
         </div>
-        <div class="row my-5">
-            <div class="col col-6 d-flex justify-content-end">
-                <img src="{{asset('/imgs/custom.jpg')}}" style="width: 100%; border-radius:0.5rem;" alt="">
-            </div>
-            <div class="col col-6 d-flex flex-column justify-content-center">
-                <h2 class="fw-bold">Customize your gift</h2>
-                <p>Create personalized moments with our custom gifts, tailored to perfection for your loved ones.</p>
-            </div>
-        </div>
-        <div class="row my-5">
-            <h1 class="fw-light text-center" style="font-family: 'Poiret One', cursive;">Custom Products</h1>
-            <div class="col col-12 d-flex justify-content-around flex-wrap">
-                    <a href="/{{$email}}/custom/cup">
-                        <div class="products my-3 mx-2">
-                            <img src="{{asset('/imgs/customcup.webp')}}" style="width:15rem; height:15rem; border-radius:0.5rem;" alt="" class="post-image">
-                            <div class="edit">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-column align-items-center mx-1">
-                                        <img src="{{asset('/imgs/logos/shopping-cart-add.svg')}}" alt="" class="hover-icon">
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center mx-5">
-                                        <img src="{{asset('/imgs/logos/heart.svg')}}" alt="" class="hover-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mt-2" style="margin-block-start: 0; margin-block-end:0;">Custom Cup</p>
-                            <p style="margin-block-start: 0; margin-block-end:0;">$ 20</p>
-                        </div>
-                    </a>
-                    <a href="/{{$email}}/custom/diary">
-                        <div class="products my-3 mx-2">
-                            <img src="{{asset('/imgs/customdiary.jpg')}}" style="width:15rem; height:15rem; border-radius:0.5rem;" alt="" class="post-image">
-                            <div class="edit">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-column align-items-center mx-1">
-                                        <img src="{{asset('/imgs/logos/shopping-cart-add.svg')}}" alt="" class="hover-icon">
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center mx-5">
-                                        <img src="{{asset('/imgs/logos/heart.svg')}}" alt="" class="hover-icon">
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mt-2" style="margin-block-start: 0; margin-block-end:0;">Custom Diary</p>
-                            <p style="margin-block-start: 0; margin-block-end:0;">$ 40</p>
-                        </div>
-                    </a>
-                    
-            </div>
-        </div>
+        <div class="about-cover">Customize Your Gift</div>
+        <div style="display:flex; justify-content: space-between">
+         <div class="product-card">
+		<div class="badge">Hot</div>
+		<div class="product-tumb">
+			<img src="{{asset('/imgs/customcup.webp')}}" alt="">
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Cups</span>
+			<h4><a href="/{{$email}}/custom/cup">Custom Cups</a></h4>
+			<p>Custom Bistro Style Large Coffee Mugs 16 oz. Set of 10, Personalized Bulk Pack - Perfect for Coffee, Tea, Espresso, Hot Cocoa, Other Beverages - Orange</p>
+			<div class="product-bottom-details">
+				<div class="product-price"><small>$25.00</small>$20.00</div>
+				<div class="product-links">
+					<a href=""><i class="fa fa-heart"></i></a>
+					<a href=""><i class="fa fa-shopping-cart"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="product-card">
+		<div class="badge">Hot</div>
+		<div class="product-tumb">
+			<img src="{{asset('/imgs/customdiary.jpg')}}" alt="">
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Diary</span>
+			<h4><a href="/{{$email}}/custom/diary">Custom Diary</a></h4>
+			<p>LEATHER VILLAGE Tree of Life Journal – 8 X 6 (A5) inches – 200 Antique Deckle Edge Handmade Paper – Book of Shadows – Vintage Black Color - Vintage Leather Bound Journal for Women & Men</p>
+			<div class="product-bottom-details">
+				<div class="product-price"><small>$50.00</small>$40.00</div>
+				<div class="product-links">
+					<a href=""><i class="fa fa-heart"></i></a>
+					<a href=""><i class="fa fa-shopping-cart"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
         @component('components.footer')
         @endcomponent
     </div>

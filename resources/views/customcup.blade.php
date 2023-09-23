@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Custom Cup | Gifts Shop</title>
 </head>
-<body class="shop text-white">
+<body class="shop text-black">
     <div class="container-fluid py-3 px-5">
     <div class="d-flex justify-content-between align-items-center">
             <div>

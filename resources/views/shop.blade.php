@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Buy | Gifts Shop</title>
 </head>
-<body class="shop text-white">
-    <div class="container-fluid py-3 px-5">
-    <div class="d-flex justify-content-between align-items-center">
+<body class="shop text-black">
+    <div>
+        <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -28,14 +28,14 @@
                 @endif
             </div>
         </div>
-        <div class="row my-5">
-            <div class="col col-6 d-flex justify-content-end">
+        <div class="welcome-product-card my-5 d-flex flex-row" style="gap:1rem">
+            <div class="d-flex justify-content-end">
                 <img src="{{asset('/imgs/gifts.jpg')}}" style="width: 100%; border-radius:0.5rem;" alt="">
             </div>
-            <div class="col col-6 d-flex flex-column justify-content-center">
-                <h2 class="fw-bold">Gifts</h2>
+            <div class="d-flex flex-column justify-content-center">
+                <h1 class="fw-bold" style="color:#E32C92">Gifts</h1>
                 <p>Discover the perfect gift at our store. Thoughtfully curated and beautifully crafted, our collection offers something special for every occasion. Make moments memorable with our handpicked treasures.</p>
-                <a href="" class="btn w-25 fw-bold" style="background:#fff77d; color:#1a134d ">More Details</a>
+                <a href="" class="btn w-25 fw-bold" style="background:#E32C92; color:white">More Details</a>
             </div>
         </div>
         <div class="row my-5">
