@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Gifts Shop</title>
 </head>
-<body class="welcome text-white">
-    <div class="container-fluid py-3 px-5">
-    <div class="d-flex justify-content-between align-items-center">
+<body class="welcome text-black">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -28,10 +28,8 @@
                 @endif
             </div>
         </div>
-        <div class="row my-4">
-            <div class="col col-12 text-center">
-                <h1 style="font-family: 'Poiret One', cursive !important;" class="fw-bold">Gifts For Your Relatives</h1>
-            </div>
+        <div class="welcome-top">
+            <h1 style="font-family: 'Poiret One', cursive !important;" class="fw-bold">Gifts For Your Relatives</h1>
         </div>
         <!-- <div class="row mb-4">
             <div class="col col-12 d-flex justify-content-center">
@@ -81,35 +79,39 @@
             </div>
         </div>
         <div class="row" style="margin-top: 10rem;">
-            <div class="col col-12 d-flex px-5 my-5">
+            <div class="welcome-product-card col col-12 d-flex px-5 my-5">
                 <img src="{{asset('/imgs/gift1.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; z-index:360;" alt="">
                 <div class="d-flex flex-column justify-content-center px-5">
+                <h1 style="color:#E32C92">Books</h1>
                 <p class="my-1 mt-5">Experience the pleasure of writing with our premium selection of pens. Designed to provide a smooth and effortless writing experience, our pens combine style, comfort, and precision. </p>
                 <p class="my-1">Elevate your writing experience and make a statement with our exceptional range of pens, ensuring that your words are conveyed with elegance and finesse.</p>
-                <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #fff77d">Buy Pen <img src="{{asset('imgs/logos/angle-right.svg')}}" style="background:#fff77d;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
+                <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #E32C92"><img src="{{asset('imgs/logos/left-angle-white.svg')}}" style="background:#E32C92;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""> Buy Pen</a>
                 </div>
             </div>
-            <div class="col col-12 d-flex px-5 my-5">
+            <div class="welcome-product-card col col-12 d-flex px-5 my-5">
                 <div class="d-flex flex-column justify-content-center px-5">
+                <h1 style="color:#E32C92;">Flowers</h1>
                     <p class="my-1 mt-5">Say it with flowers and express your heartfelt emotions with our stunning bouquets. Handcrafted by expert florists, our bouquets are a blend of beauty and artistry.  </p>
                     <p class="my-1">From classic roses to exotic orchids, our diverse collection offers an array of colors and scents to suit every taste. </p>
-                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #fff77d">Buy Bouqet <img src="{{asset('imgs/logos/angle-right.svg')}}" style="background:#fff77d;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
+                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #E32C92">Buy Bouqet <img src="{{asset('imgs/logos/right-angle-white.svg')}}" style="background:#E32C92;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
                 </div>
                 <img src="{{asset('/imgs/gift2.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; z-index:360;" alt="">
             </div>
-            <div class="col col-12 d-flex px-5 my-5">
+            <div class="welcome-product-card col col-12 d-flex px-5 my-5">
             <img src="{{asset('/imgs/gift3.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; height:26rem !important; z-index:360;" alt="">
                 <div class="d-flex flex-column justify-content-center px-5">
+                <h1 style="color:#E32C92">Books</h1>
                     <p class="my-1 mt-5">Immerse yourself in captivating stories and unlock new worlds with our thoughtfully curated collection of books and diaries. From gripping thrillers to heartwarming romances, our selection caters to all literary tastes.</p>
                     <p class="my-1">Each book and diary is carefully chosen to provide you with inspiration, entertainment, and a chance to explore the depths of imagination.</p>
-                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #fff77d">Buy Books <img src="{{asset('imgs/logos/angle-right.svg')}}" style="background:#fff77d;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
+                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #E32C92"><img src="{{asset('imgs/logos/left-angle-white.svg')}}" style="background:#E32C92;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""> Buy Books</a>
                 </div>
             </div>
-            <div class="col col-12 d-flex px-5 my-5">
+            <div class="welcome-product-card col col-12 d-flex px-5 my-5">
                 <div class="d-flex flex-column justify-content-center px-5">
+                    <h1 style="color:#E32C92">Cups</h1>
                     <p class="my-1 mt-5">Indulge in your favorite hot beverages with our exquisite collection of cups. Crafted with care and precision, our cups are designed to enhance your drinking experience.</p>
                     <p class="my-1">Choose from a variety of styles, colors, and sizes to find the cup that suits your taste and mood. Elevate your morning routine or add a touch of sophistication to your afternoon tea break with our exceptional cup collection.</p>
-                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #fff77d">Buy Cup <img src="{{asset('imgs/logos/angle-right.svg')}}" style="background:#fff77d;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
+                    <a href="/shop/{{$email}}" class="fs-6 fw-bold mt-2" style="color: #E32C92">Buy Cup <img src="{{asset('imgs/logos/right-angle-white.svg')}}" style="background:#E32C92;padding: 0.5rem;width:2rem; border-radius:100px;" alt=""></a>
                 </div>
                 <img src="{{asset('/imgs/gift4.jpg')}}" style="border-radius: 0.3rem; width:28rem !important; height:26rem !important; z-index:360;" alt="">
             </div>

@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Gifts Shop</title>
 </head>
-<body class="welcome text-white">
-    <div class="container-fluid py-3 px-5">
-        <div class="d-flex justify-content-between align-items-center">
+<body class="welcome text-black">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -28,9 +28,9 @@
                 @endif
             </div>
         </div>
-        <div class="row">
-            <div class="col col-12 mt-5 mb-2 p-4 d-flex justify-content-center flex-column align-items-center">
-            <img src="{{asset('/imgs/1.jpg')}}" class="w-50" style="border-radius:0.5rem;" alt="">
+        <div class="about-cover">ABOUT US</div>
+            <div class="welcome-product-card mt-5 mb-2 p-4 d-flex justify-content-center flex-column align-items-center">
+            <h1 style="color:#E32C92">Information</h1>
             <p class="my-5" style="line-height:2; text-align:justify">Welcome to our Gifts Store, your ultimate destination for unique and memorable gifts. At our Gifts Store, we believe that giving and receiving gifts should be a joyous experience that leaves a lasting impression. We are passionate about curating a diverse collection of products that celebrate special moments, express love and appreciation, and bring smiles to faces.
 
 With years of experience in the gifting industry, we understand the importance of finding the perfect gift for every occasion. Our team of dedicated professionals scours the globe to handpick the finest products, ensuring that each item in our collection is of the highest quality and embodies the essence of thoughtful gifting.
@@ -43,7 +43,6 @@ We believe in the power of gift-giving to create cherished memories and strength
 
 Thank you for choosing our Store as your go-to destination for gifts that make a difference. We are honored to be a part of your special moments and look forward to helping you find the perfect gift that will bring smiles and warm hearts. Start exploring our collection today and discover the joy of giving with our gifts store.</p>
             </div>
-        </div>
         @component('components.footer')    
         @endcomponent
     </div>
