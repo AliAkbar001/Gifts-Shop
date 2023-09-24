@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Custom Cup | Gifts Shop</title>
 </head>
-<body class="shop text-white">
-    <div class="container-fluid py-3 px-5">
-        <div class="d-flex justify-content-between align-items-center">
+<body class="shop text-black">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -40,7 +40,7 @@
                 @if (session('success'))
                     <div class="alert alert-success success-message text-center" style="padding:1rem;background: rgb(152, 255, 183); font-size:1rem; margin-top:0.7rem; border:none; color:rgb(1, 131, 40)">{{ session('success') }}</div>
                 @endif
-                <button class="mt-3 w-100 btn text-white" type="submit" style="background: #1a134d !important;">Add to Cart</button>
+                <button class="mt-3 w-100 btn text-white" type="submit" style="background: #E32C92 !important;">Add to Cart</button>
             </form>
         </div>
         @component('components.footer')

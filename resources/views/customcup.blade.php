@@ -11,10 +11,10 @@
     <title>Custom Cup | Gifts Shop</title>
 </head>
 <body class="shop text-black">
-    <div class="container-fluid py-3 px-5">
-    <div class="d-flex justify-content-between align-items-center">
+    <div>
+    <div class="header d-flex justify-content-between align-items-center" style="height: 70px;">
             <div>
-                <a href="/user/{{$email}}"><h4 class="h4">Gifts Store</h4></a>
+                <a href="/user/{{$email}}"><img src="{{asset('/imgs/GIFTLAB-Logo.png')}}" alt="" style="width:120px"></a>
             </div>
             <div class="d-flex justify-content-around align-items-center">
                 <a href="/about/{{$email}}" class="mx-3">About Us</a>
@@ -33,9 +33,11 @@
                 backdrop-filter: blur(15px) saturate(100%); border-radius:0.5rem;">
                 <form class="w-75" method="GET" action="/customizecup/{{$email}}/cup/20/" id="customCupForm">
                     <h1 class="fw-light">Custom Cup</h1>
-                    <div class="form-outline mb-4 mt-3">
-                      <input type="text" name="input_text" placeholder="Enter Text" id="form1Example1" class="form-control" maxlength="10"  required/>
-                      <label class="form-label">Enter Text To Add On Cup</label>
+                    <div class="group">      
+                        <input type="text" class="text-input" name="input_text" id="form1Example1" maxlength="10" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class="custom-label">Enter Text To Add On Cup</label>
                     </div>
                     <div class="form-outline mb-4 mt-3">
                     <label for="cup_image">Select a Cup Image:</label>
@@ -67,7 +69,7 @@
                 </div>
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn w-100 btn-block text-white" style="background:#1a134d !important;">Check Output</button>
+                    <button type="submit" class="btn w-100 btn-block text-white" style="background:#E32C92 !important;">Check Output</button>
                     @if (session('error'))
                       <div class="alert alert-danger error-message text-center" style="padding:1rem ;background: rgb(252, 161, 168); font-size:1rem; margin-top:0.7rem; border:none; color:rgb(237, 73, 86)">{{ session('error') }}</div>
                     @endif
