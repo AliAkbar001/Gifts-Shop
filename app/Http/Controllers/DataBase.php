@@ -264,7 +264,7 @@ class DataBase extends Controller
                 // $quantity = $product->qty;
                 $lineItems[] = [
                     'price_data' => [
-                    'currency' => 'usd',
+                    'currency' => 'pkr',
                     'product_data' => [
                         //'name' => $product->name,
                         'name' => 'Ali',
